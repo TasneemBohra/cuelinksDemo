@@ -5,8 +5,6 @@ import android.os.Bundle;
 import android.util.Patterns;
 import android.widget.TextView;
 
-import com.cuelinks.library.*;
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
@@ -26,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public static String extractLinks(String text, String PUBID) {
-        if (com.cuelinks.library.BuildConfig.DEBUG) {
+        if (BuildConfig.DEBUG) {
             List<String> links = new ArrayList<>();
             Matcher m = Patterns.WEB_URL.matcher(text);
             while (m.find()) {
