@@ -12,8 +12,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:autoLink="all"
         android:text="Redirect this link via linksredirect.com \n \n https://www.faasos.com/"
-        android:autoLink="web"
-        android:clickable="true"
         android:textColorLink="@color/colorPrimary"/>
 </LinearLayout>
